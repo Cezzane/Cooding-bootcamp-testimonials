@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: url(../../images/pattern-bg.svg) no-repeat 90% 30%, url(../../images/pattern-curve.svg) no-repeat 0% 110%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 100px 154px;
+  height: auto;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    height: 645px;
+    background: url(../../images/pattern-bg.svg) no-repeat 50% 10%, url(../../images/pattern-curve.svg) no-repeat 0px 100%;
+    background-size: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 54px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.slide {
+  height: 511px;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.slide .john {
+  -webkit-transition: display 2s ease-in;
+  transition: display 2s ease-in;
+}
+
+.slide .tanya {
+  -webkit-transition: display ease 2s;
+  transition: display ease 2s;
+}
+
+.slide .quote-img {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.slide .show {
+  display: block;
+}
+
+.slide .hide {
+  display: none;
+}
+
+.slide .profile__img {
+  border-radius: 10px;
+  margin-left: 50%;
+}
+
+.slide .testimonial {
+  width: 55%;
+  top: 15%;
+  position: absolute;
+}
+
+.slide .slide__btns {
+  position: absolute;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 54px;
+  right: 35%;
+  top: 100%;
+  width: 107px;
+  border-radius: 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.slide .slide__btns button {
+  background: none;
+  border: none;
+  outline: none;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: background-color linear .3s;
+  transition: background-color linear .3s;
+  -webkit-box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.16);
+}
+
+.slide .slide__btns button svg {
+  margin-top: 2px;
+}
+
+.slide .slide__btns button:hover {
+  background-color: #5547D9;
+}
+
+.slide .slide__btns button:hover path {
+  stroke: white;
+}
+
+@media only screen and (max-width: 650px) {
+  .slide {
+    height: auto;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .slide .testimonial {
+    width: 85%;
+    margin: 70px auto;
+    position: relative;
+  }
+  .slide .profile__img {
+    height: 253px;
+    margin: auto;
+  }
+  .slide .quote-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 50px;
+  }
+  .slide .slide__btns {
+    position: absolute;
+    top: 40%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 41px;
+    width: 82px;
+  }
+}
+
+.message {
+  width: 635px;
+  position: relative;
+  padding-top: 40px;
+  left: 65px;
+}
+
+.message__text {
+  font-size: 2vw;
+  font-weight: 300;
+  margin: 15% 0 10% 0;
+  color: #202046;
+}
+
+.message img {
+  position: absolute;
+  margin: 40px 60px;
+}
+
+.message .message__name {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+  .message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    padding: 30px 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    left: auto;
+  }
+  .message__text {
+    width: 100%;
+    font-size: 20px;
+  }
+  .message img {
+    position: absolute;
+    width: 57px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
