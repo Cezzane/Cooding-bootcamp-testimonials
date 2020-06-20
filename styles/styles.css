@@ -72,6 +72,8 @@ body {
 .slide .profile__img {
   border-radius: 10px;
   margin-left: 50%;
+  -webkit-box-shadow: 0px 10px 48px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 10px 48px 0px rgba(0, 0, 0, 0.42);
 }
 
 .slide .testimonial {
